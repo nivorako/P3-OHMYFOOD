@@ -16,7 +16,7 @@
     box-shadow:  0 5px 10px 5px darken($color: $intro-color, $amount: 5%);
 }
 
-@mixin elt-hover($percent: 25%){
+@mixin elt-hover($percent: 10%){
     opacity: 0.8;
     @include button-shadow($amount-percent: $percent);
 }
