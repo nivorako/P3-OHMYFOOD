@@ -1,0 +1,21 @@
+
+
+.intro{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($intro-color, 5%);
+    p{
+        width: 85%;
+        margin: 10px auto;
+        color: darken($intro-color, 50%);
+    }
+    h2{
+        width: 70%;
+        margin: 10px auto;
+        
+    }
+}

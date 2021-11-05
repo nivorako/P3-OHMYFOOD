@@ -1,0 +1,19 @@
+.button{
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    width: 270px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 25px;
+    @include button-image($secondary-percent: 10%, $primary-percent: 1%);
+    @include button-shadow($amount-percent: 10%);
+} 
+.button:hover{
+    @include elt-hover($percent: 25%)
+}
+
+.button--center{
+    width: 300px;
+    margin: 50px auto;
+}
