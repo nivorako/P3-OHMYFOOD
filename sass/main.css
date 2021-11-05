@@ -57,6 +57,64 @@
   left: 25px;
 }
 
+.foot {
+  background-color: black;
+  padding: 30px 20px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .foot {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.foot__relation {
+  font-family: 'Shrikhand', cursive;
+}
+
+.foot__mentions {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .foot__section {
+    width: 30%;
+  }
+}
+
+.foot a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.foot a:hover {
+  color: #6b6b6b;
+}
+
+.foot p {
+  font-weight: bold;
+  margin: 10px 0 10px;
+  width: 300px;
+  text-align: left;
+}
+
 .locate {
   width: 100%;
   display: -webkit-box;
