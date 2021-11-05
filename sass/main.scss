@@ -1,3 +1,18 @@
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layouts/_locate.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    position: relative;
+}
+
 .head{position: relative;
 
     width: 100%;

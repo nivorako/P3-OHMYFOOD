@@ -1,0 +1,37 @@
+
+
+@mixin button-image($secondary-percent: 15%, $primary-percent: 1%){
+    background-image:linear-gradient(darken($secondary, $secondary-percent), darken($primary, $primary-percent)); 
+}
+
+@mixin button-shadow($amount-percent: 5%){
+    box-shadow:  0 5px 10px 5px darken($color: $intro-color, $amount: $amount-percent);
+}
+
+@mixin p-bold{
+    font-weight: bold;
+}
+
+@mixin box-shadow{
+    box-shadow:  0 5px 10px 5px darken($color: $intro-color, $amount: 5%);
+}
+
+@mixin elt-hover($percent: 25%){
+    opacity: 0.8;
+    @include button-shadow($amount-percent: $percent);
+}
+
+@mixin button {
+    & button{
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+        width: auto;
+        margin: 10px auto;
+        padding: 15px;
+        border-radius: 25px;
+        background-image:linear-gradient(darken($secondary: 15%), darken($primary: 1%)); 
+        @include box-shadow;
+    }
+}
+

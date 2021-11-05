@@ -1,3 +1,37 @@
+.locate {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  background-color: #eaeaea;
+  -webkit-box-shadow: 0 -5px 5px -5px #515151;
+          box-shadow: 0 -5px 5px -5px #515151;
+  gap: 20px;
+}
+
+.locate p {
+  font-weight: bold;
+  color: #6b6b6b;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  position: relative;
+}
+
 .head {
   position: relative;
   width: 100%;
