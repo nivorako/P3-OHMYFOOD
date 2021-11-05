@@ -3,12 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 60px;
     background-color: $intro-color;
-    box-shadow: 0 -5px 5px -5px darken($intro-color, 50%);
+    box-shadow: 0 -5px 10px -5px darken($intro-color, 40%);
     gap: 20px;
     p{
         font-weight: bold;
         color: darken($intro-color, 50%);
+        
     }
 }

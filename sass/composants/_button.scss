@@ -1,11 +1,12 @@
 .button{
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.9em;
     color: white;
     white-space: nowrap;
-    width: 270px;
+    width: 300px;
     margin: 10px auto;
-    padding: 15px;
-    border-radius: 25px;
+    padding: 20px 30px;
+    border-radius: 50px;
     @include button-image($secondary-percent: 10%, $primary-percent: 1%);
     @include button-shadow($amount-percent: 10%);
 } 

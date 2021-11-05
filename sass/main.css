@@ -1,11 +1,12 @@
 .button {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.9em;
   color: white;
   white-space: nowrap;
-  width: 270px;
+  width: 300px;
   margin: 10px auto;
-  padding: 15px;
-  border-radius: 25px;
+  padding: 20px 30px;
+  border-radius: 50px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff46cc), to(#9052db));
   background-image: linear-gradient(#ff46cc, #9052db);
   -webkit-box-shadow: 0 5px 10px 5px #d1d1d1;
@@ -32,11 +33,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .head img {
-  width: 180px;
+  width: 220px;
 }
 
 .head__arrow {
@@ -56,10 +57,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50px;
+  height: 60px;
   background-color: #eaeaea;
-  -webkit-box-shadow: 0 -5px 5px -5px #515151;
-          box-shadow: 0 -5px 5px -5px #515151;
+  -webkit-box-shadow: 0 -5px 10px -5px #848484;
+          box-shadow: 0 -5px 10px -5px #848484;
   gap: 20px;
 }
 
@@ -201,6 +202,5 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
-  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
