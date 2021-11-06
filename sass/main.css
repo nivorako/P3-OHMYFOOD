@@ -1,3 +1,17 @@
+.new {
+  position: absolute;
+  font-weight: bold;
+  top: 30px;
+  right: 10px;
+  width: 120px;
+  height: 50px;
+  padding: 10px;
+  margin: 0;
+  background-color: #99E2D0;
+  color: #219477;
+  border-radius: 5px;
+}
+
 .button {
   font-weight: 600;
   font-size: 0.9em;
@@ -52,6 +66,7 @@
 }
 
 .head__arrow {
+  color: black;
   position: absolute;
   top: 10px;
   left: 25px;
@@ -316,6 +331,7 @@
 }
 
 .resto__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,6 +398,96 @@
 
 .resto__desc i {
   margin-bottom: 30px;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.menu__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.menu__body {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-top: -50px;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.menu__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__title h2 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu__card h3 {
+  font-weight: lighter;
+  color: #6b6b6b;
+}
+
+.menu__item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 5px 10px 5px #dddddd;
+          box-shadow: 0 5px 10px 5px #dddddd;
+}
+
+.menu__item h4 {
+  margin: 5px 0;
+}
+
+.menu__item div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item div p {
+  margin: 5px 0;
+}
+
+.menu__item:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 5px 10px 5px #aaaaaa;
+          box-shadow: 0 5px 10px 5px #aaaaaa;
+}
+
+.menu__details p {
+  color: #6b6b6b;
+}
+
+.menu__details span {
+  font-weight: bold;
 }
 
 * {

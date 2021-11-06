@@ -1,6 +1,7 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./composants/new";
 @import "./composants/button";
 @import "./composants/icon";
 @import "./layouts/head";
@@ -9,6 +10,7 @@
 @import "./layouts/intro";
 @import "./layouts/working";
 @import "./layouts/resto";
+@import "./pages/palette.scss";
 
 
 *{
