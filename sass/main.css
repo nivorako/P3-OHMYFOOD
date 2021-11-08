@@ -74,19 +74,13 @@
 
 .foot {
   position: relative;
-  background-color: black;
+  background-color: #383838;
   padding: 30px 20px 30px;
 }
 
 @media screen and (min-width: 768px) {
   .foot {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
 }
 
@@ -112,6 +106,10 @@
 
 .foot ul {
   padding-left: 0;
+}
+
+.foot li {
+  list-style: none;
 }
 
 .foot a {
@@ -143,14 +141,12 @@
 #foot__logo {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
-  position: absolute;
-  top: 30px;
-  left: 20px;
   width: 150px;
 }
 
 @media screen and (min-width: 768px) {
   #foot__logo {
+    position: absolute;
     left: 45%;
   }
 }
@@ -426,7 +422,6 @@
 }
 
 .menu {
-  position: relative;
   width: 90%;
   margin: auto;
 }
@@ -435,18 +430,16 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 0;
 }
 
 .menu__body {
-  position: absolute;
-  top: 350px;
+  position: relative;
   width: 100%;
   background-color: #f7f7f7;
   padding: 20px;
   margin-top: -50px;
   border-radius: 50px;
-  z-index: 1;
+  z-index: 9;
 }
 
 .menu__title {

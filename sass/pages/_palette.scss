@@ -1,21 +1,18 @@
 .menu{
-    position: relative;
     width: 90%;
     margin: auto;
     &__img{
         width: 100%;
         object-fit: cover;
-        z-index: 0;
     }
     &__body{
-        position: absolute;
-        top: 350px;
+        position: relative;
         width: 100%;
         background-color: lighten($intro-color, 5%);
         padding: 20px;
         margin-top: -50px;
         border-radius: 50px;
-        z-index: 1;
+        z-index: 9;
     }
     &__title{
         width: 100%;
