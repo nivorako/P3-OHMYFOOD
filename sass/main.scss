@@ -10,7 +10,7 @@
 @import "./layouts/intro";
 @import "./layouts/working";
 @import "./layouts/resto";
-@import "./pages/palette.scss";
+@import "./pages/palette";
 
 
 *{
@@ -18,7 +18,7 @@
 }
 
 body{
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
-
 }

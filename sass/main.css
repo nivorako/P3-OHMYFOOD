@@ -73,6 +73,7 @@
 }
 
 .foot {
+  position: relative;
   background-color: black;
   padding: 30px 20px 30px;
 }
@@ -89,18 +90,28 @@
   }
 }
 
-.foot__relation {
-  font-family: 'Shrikhand', cursive;
-}
-
-.foot__mentions {
-  text-align: center;
+.foot__items {
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 768px) {
-  .foot__section {
-    width: 30%;
+  .foot__items {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 10px;
   }
+}
+
+.foot ul {
+  padding-left: 0;
 }
 
 .foot a {
@@ -126,8 +137,22 @@
 .foot p {
   font-weight: bold;
   margin: 10px 0 10px;
-  width: 300px;
   text-align: left;
+}
+
+#foot__logo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  #foot__logo {
+    left: 45%;
+  }
 }
 
 .locate {
@@ -402,7 +427,7 @@
 
 .menu {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
@@ -496,6 +521,7 @@
 }
 
 body {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
 }
