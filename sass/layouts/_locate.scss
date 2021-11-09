@@ -8,6 +8,8 @@
     box-shadow: 0 -5px 10px -5px darken($intro-color, 40%);
     gap: 20px;
     input{
+        width: 180px;
+        text-align: center;
         border: none;
         background-color: $intro-color;
     }

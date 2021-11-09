@@ -1,8 +1,31 @@
 .fa-heart{
+    position: relative;
     font-size: 30px;
-    transition: color 1s ease-out;
+    transition-property: color;
+    transition-duration: 1s;
+    background-clip: content-box;
+    color: white;
     &:hover{
         font-weight: bold;
         color: red;
     }
 }
+
+
+
+
+
+// backgroud-clip text
+
+// animation resto
+// line-clamp
+// display webkit box
+// tex overflow ellipsis
+
+// texte nouveau à centrer
+
+// object-fit; cover sur image faut rajouter height
+
+// installer zoom
+
+// enlever marge sur pages

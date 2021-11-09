@@ -39,9 +39,14 @@
 }
 
 .fa-heart {
+  position: relative;
   font-size: 30px;
-  -webkit-transition: color 1s ease-out;
-  transition: color 1s ease-out;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background-clip: content-box;
+  color: white;
 }
 
 .fa-heart:hover {
@@ -170,6 +175,8 @@
 }
 
 .locate input {
+  width: 180px;
+  text-align: center;
   border: none;
   background-color: #eaeaea;
 }
