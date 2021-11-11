@@ -6,6 +6,7 @@
   width: 120px;
   height: 50px;
   padding: 10px;
+  line-height: 1.5;
   margin: 0;
   background-color: #99E2D0;
   color: #219477;
@@ -39,9 +40,7 @@
 }
 
 .fa-heart {
-  position: relative;
   font-size: 30px;
-  overflow: hidden;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
   -webkit-background-clip: text;
@@ -53,21 +52,13 @@
 
 .fa-heart::after {
   content: "";
-  position: absolute;
   display: block;
-  top: 30px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .fa-heart:hover {
-  opacity: 1;
   color: #fc2ae0;
-}
-
-.fa-heart:hover::after {
-  top: 0;
-  opacity: 0;
 }
 
 .head {

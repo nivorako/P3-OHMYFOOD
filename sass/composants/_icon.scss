@@ -1,7 +1,5 @@
 .fa-heart{
-    position: relative;
     font-size: 30px;
-    overflow: hidden;
     transition: color 1s ease;
     -webkit-background-clip: text;
     -webkit-text-stroke: 1px black;
@@ -10,18 +8,11 @@
     color: transparent;
     &::after{
         content: "";
-        position: absolute;
         display:block ;
-        top: 30px; 
         transition: all 1s;
     }
     &:hover {
-        opacity: 1;
         color: rgb(252, 42, 224);
-    }
-    &:hover::after {
-        top: 0;
-        opacity: 0;
     }
 }
 
@@ -39,7 +30,7 @@
 // // animation resto
 // // line-clamp
 // // display webkit box
-// // tex overflow ellipsis
+// // texte overflow ellipsis
 
 // // texte nouveau à centrer
 
