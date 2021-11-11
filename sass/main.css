@@ -41,17 +41,33 @@
 .fa-heart {
   position: relative;
   font-size: 30px;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  background-clip: content-box;
-  color: white;
+  overflow: hidden;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px black;
+  background-clip: text;
+  background-color: transparent;
+  color: transparent;
+}
+
+.fa-heart::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 30px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .fa-heart:hover {
-  font-weight: bold;
-  color: red;
+  opacity: 1;
+  color: #fc2ae0;
+}
+
+.fa-heart:hover::after {
+  top: 0;
+  opacity: 0;
 }
 
 .head {
