@@ -36,7 +36,7 @@
 
     &__section h3::after{
         content: "";
-        width: 50px;
+        width: 40px;
         height: 3px;
         background-color: turquoise;
         left: 0;
@@ -51,19 +51,40 @@
         padding: 15px;
         overflow: hidden;
         margin-bottom: 20px;
+        
         @include box-shadow;
         h4{
             margin: 5px 0;
         }
         div{
+            transition: all 1s;
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             p{
+                color: darken($intro-color, 50%);
                 margin: 5px 0;
             }
+            span{
+                font-weight: bold;
+            }
         }
+    }
+
+    // On fait apparaitre progressivement chaque item selon rang dans nth-child()
+    
+
+    &__item:nth-child(1){
+        @include animation-fade-in1;
+    }
+
+    &__item:nth-child(2){
+        @include animation-fade-in2;
+    }
+
+    &__item:nth-child(3){
+        @include animation-fade-in3;
     }
 
     &__item::after{
@@ -88,16 +109,6 @@
 
     &__item:hover::after{
         right: 0;
-    }
-
-    &__details{
-        transition: all 1s;
-        p{
-            color: darken($intro-color, 50%);
-        }
-        span{
-            font-weight: bold;
-        }
     }
 
     // Pour ecran au dessus de 992px

@@ -21,17 +21,3 @@
     @include button-shadow($amount-percent: $percent);
 }
 
-// @mixin button {
-//     & button{
-//         font-weight: bold;
-//         color: white;
-//         white-space: nowrap;
-//         width: auto;
-//         margin: 10px auto;
-//         padding: 15px;
-//         border-radius: 25px;
-//         background-image:linear-gradient(darken($secondary: 15%), darken($primary: 1%)); 
-//         @include box-shadow;
-//     }
-// }
-

@@ -1,0 +1,56 @@
+@mixin animation-fade-in1{
+    animation: 2s ease-in-out fade-in ;
+    @keyframes fade-in{
+        0%{
+            opacity: 0;
+           top: 50px;
+        }
+        // il y a 10% d attente avant que l'animation commence
+        // 5%{
+        //     opacity: 0;
+        //    top: 50px;
+        // }
+        100%{
+            opacity: 1;
+           top: 0px;
+        }
+    }
+}
+
+@mixin animation-fade-in2{
+    animation: 2s ease-in-out fade-in2 ;
+    @keyframes fade-in2{
+        0%{
+            opacity: 0;
+            top: 50px;
+        }
+        // il y a 10% d attente avant que l'animation commence
+        20%{
+            opacity: 0;
+           top: 50px;
+        }
+        100%{
+            opacity: 1;
+            top: 0px;
+        }
+    }
+}
+
+@mixin animation-fade-in3{
+    animation: 2s ease-in-out fade-in3 ;
+    @keyframes fade-in3{
+        0%{
+            opacity: 0;
+            top: 50px;
+        }
+        // il y a 10% d attente avant que l'animation commence
+        40%{
+            opacity: 0;
+            top: 50px;
+        }
+        100%{
+            opacity: 1;
+            top: 0px;
+        }
+    }
+}
