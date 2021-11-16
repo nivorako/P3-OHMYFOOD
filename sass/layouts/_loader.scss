@@ -1,0 +1,93 @@
+
+.loader{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    z-index: -1;
+    animation: 4s linear showSpin ;
+    &__title{
+        position: relative;
+        font-family: 'Shrikhand', cursive;
+        font-weight: bolder;
+        font-size: 2em;
+        color: $secondary;
+        margin-top: 500px;
+        animation:    3s linear infinite titleAnim;
+    }
+    &__title::before{
+        position: absolute;
+        content: "";
+        top: -130px;
+        left: -10%;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        padding: 50% 10%;
+        border-radius: 50%;
+        border: #f1f1f1 3px solid;
+        animation: .5s  linear infinite alternate boxMagic,
+                    4s linear infinite spinning;
+    }
+}
+
+@keyframes titleAnim {
+    0%{
+        transform: translateY(350);
+    }
+    60%{
+        transform: translateY(-350px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes boxMagic {
+    from{
+        box-shadow: 
+        0 0 0 $primary,
+        0 0 0 $secondary,
+        0 0 0 $tertiary,
+        0 0 0 $intro-color;
+    }
+
+    to{
+        box-shadow: 
+        -15px 0 0 $primary,
+        0 -15px 20px $secondary,
+        10px  0 0 $tertiary,
+        0 15px  0 rgb(247, 75, 238);
+    }
+}
+
+@keyframes spinning {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes showSpin{
+    0%{
+        opacity: 1;
+        z-index: 1;
+    }
+    90%{
+        opacity: 1;
+        z-index: 1;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
