@@ -210,6 +210,7 @@
 @media screen and (min-width: 1440px) {
   .working__items {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .working__item {
