@@ -23,6 +23,7 @@
   margin: 30px auto;
   padding: 20px 30px;
   border-radius: 50px;
+  cursor: pointer;
   background-image: linear-gradient(#ff46cc, #9052db);
   box-shadow: 0 5px 10px 5px #d1d1d1;
 }
@@ -212,6 +213,7 @@
   }
 }
 .working__item {
+  cursor: pointer;
   display: flex;
   justify-content: start;
   background-color: #f7f7f7;
@@ -491,6 +493,7 @@
   position: absolute;
 }
 .menu__item {
+  cursor: pointer;
   position: relative;
   background-color: white;
   border-radius: 20px;

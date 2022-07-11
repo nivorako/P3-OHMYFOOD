@@ -15,6 +15,7 @@
         }
     }
     &__item{
+        cursor: pointer;
         display: flex;
         justify-content: start;
         background-color: lighten($intro-color, 5%);
