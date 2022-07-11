@@ -3,9 +3,14 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 30px auto;
+    margin: 30px auto;  
     img{
         width: 220px;
+    }
+    &__title{
+        font-family: "shrikhand", cursive;
+        font-size: 40px;
+        opacity: 50%;
     }
     &__arrow{
         color: black;
