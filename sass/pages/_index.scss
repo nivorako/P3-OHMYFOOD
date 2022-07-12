@@ -99,7 +99,13 @@
     }
 
     &__item::after{
-        content: "";
+        content: "\f058";
+        font-family: "font awesome 5 free";
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
         position: absolute;
         height: 102px;
         width: 100px;
@@ -118,7 +124,8 @@
         @include elt-hover($percent: 25%)
     }
 
-    &__item:hover::after{
+    &__item:hover::after,
+    &__item:hover::before{
         right: 0;
     }
 

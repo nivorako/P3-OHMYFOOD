@@ -620,7 +620,13 @@
   }
 }
 .menu__item::after {
-  content: "";
+  content: "\f058";
+  font-family: "font awesome 5 free";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
   position: absolute;
   height: 102px;
   width: 100px;
@@ -637,7 +643,7 @@
   opacity: 0.8;
   box-shadow: 0 5px 10px 5px #aaaaaa;
 }
-.menu__item:hover::after {
+.menu__item:hover::after, .menu__item:hover::before {
   right: 0;
 }
 @media screen and (min-width: 992px) {
