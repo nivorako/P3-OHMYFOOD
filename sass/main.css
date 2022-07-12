@@ -50,10 +50,11 @@
 .fa-heart::after {
   content: "";
   display: block;
-  transition: all 1s;
+  transition: all 0.2s;
 }
 .fa-heart:hover {
   color: rgb(252, 42, 224);
+  -webkit-text-stroke: 1px rgb(252, 42, 224);
 }
 
 .head {

@@ -9,10 +9,12 @@
     &::after{
         content: "";
         display:block ;
-        transition: all 1s;
+        transition: all .2s;
     }
     &:hover {
         color: rgb(252, 42, 224);
+        
+        -webkit-text-stroke: 1px rgb(252, 42, 224);
     }
 }
 
