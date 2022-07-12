@@ -475,7 +475,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .menu__title h2 {
   font-family: "Shrikhand", cursive;
@@ -641,6 +641,9 @@
   right: 0;
 }
 @media screen and (min-width: 992px) {
+  .menu__title {
+    padding: 0 1.5%;
+  }
   .menu__card {
     display: flex;
     justify-content: space-evenly;
