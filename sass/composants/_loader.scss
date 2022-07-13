@@ -10,7 +10,7 @@
     align-items: flex-start;
     opacity: 0;
     z-index: -1;
-    animation: 1s linear showSpin ;
+    animation: 2s linear showSpin ;
     &__title{
         position: relative;
         font-family: 'Shrikhand', cursive;
@@ -78,13 +78,14 @@
 
 @keyframes showSpin{
     0%{
-        opacity: 1;
+        opacity: .9;
         z-index: 1;
     }
-    90%{
-        opacity: 1;
+    50%{
+        opacity: .8;
         z-index: 1;
     }
+   
     100%{
         opacity: 0;
         z-index: -1;

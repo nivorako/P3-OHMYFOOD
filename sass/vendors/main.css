@@ -251,7 +251,7 @@
   align-items: flex-start;
   opacity: 0;
   z-index: -1;
-  animation: 1s linear showSpin;
+  animation: 2s linear showSpin;
 }
 .loader__title {
   position: relative;
@@ -305,11 +305,11 @@
 }
 @keyframes showSpin {
   0% {
-    opacity: 1;
+    opacity: 0.9;
     z-index: 1;
   }
-  90% {
-    opacity: 1;
+  50% {
+    opacity: 0.8;
     z-index: 1;
   }
   100% {
