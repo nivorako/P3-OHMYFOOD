@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .new {
   position: absolute;
   font-weight: bold;
@@ -53,8 +54,8 @@
   transition: all 0.2s;
 }
 .fa-heart:hover {
-  color: rgb(252, 42, 224);
-  -webkit-text-stroke: 1px rgb(252, 42, 224);
+  color: #fc2ae0;
+  -webkit-text-stroke: 1px #fc2ae0;
 }
 
 .locate {
@@ -78,7 +79,7 @@
 }
 .locate p {
   font-weight: bold;
-  color: #6b6b6b;
+  color: red;
 }
 
 .intro {
@@ -214,8 +215,7 @@
 .resto__item img {
   width: 100%;
   height: 230px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .resto__item:hover {
@@ -251,8 +251,7 @@
   align-items: flex-start;
   opacity: 0;
   z-index: -1;
-  -webkit-animation: 4s linear showSpin;
-          animation: 4s linear showSpin;
+  animation: 1s linear showSpin;
 }
 .loader__title {
   position: relative;
@@ -261,8 +260,7 @@
   font-size: 2em;
   color: #FF79DA;
   margin-top: 500px;
-  -webkit-animation: 3s linear infinite titleAnim;
-          animation: 3s linear infinite titleAnim;
+  animation: 3s linear infinite titleAnim;
 }
 .loader__title::before {
   position: absolute;
@@ -275,20 +273,7 @@
   padding: 50% 10%;
   border-radius: 50%;
   border: #f1f1f1 3px solid;
-  -webkit-animation: 0.5s linear infinite alternate boxMagic, 4s linear infinite spinning;
-          animation: 0.5s linear infinite alternate boxMagic, 4s linear infinite spinning;
-}
-
-@-webkit-keyframes titleAnim {
-  0% {
-    transform: translateY(350);
-  }
-  60% {
-    transform: translateY(-350px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  animation: 0.5s linear infinite alternate boxMagic, 4s linear infinite spinning;
 }
 
 @keyframes titleAnim {
@@ -302,28 +287,12 @@
     transform: translateY(0);
   }
 }
-@-webkit-keyframes boxMagic {
-  from {
-    box-shadow: 0 0 0 #9356DC, 0 0 0 #FF79DA, 0 0 0 #99E2D0, 0 0 0 #eaeaea;
-  }
-  to {
-    box-shadow: -15px 0 0 #9356DC, 0 -15px 20px #FF79DA, 10px 0 0 #99E2D0, 0 15px 0 rgb(247, 75, 238);
-  }
-}
 @keyframes boxMagic {
   from {
     box-shadow: 0 0 0 #9356DC, 0 0 0 #FF79DA, 0 0 0 #99E2D0, 0 0 0 #eaeaea;
   }
   to {
-    box-shadow: -15px 0 0 #9356DC, 0 -15px 20px #FF79DA, 10px 0 0 #99E2D0, 0 15px 0 rgb(247, 75, 238);
-  }
-}
-@-webkit-keyframes spinning {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    box-shadow: -15px 0 0 #9356DC, 0 -15px 20px #FF79DA, 10px 0 0 #99E2D0, 0 15px 0 #f74bee;
   }
 }
 @keyframes spinning {
@@ -332,20 +301,6 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes showSpin {
-  0% {
-    opacity: 1;
-    z-index: 1;
-  }
-  90% {
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
   }
 }
 @keyframes showSpin {
@@ -459,8 +414,7 @@
 .menu__img {
   width: 100%;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .menu__body {
   position: relative;
@@ -532,18 +486,7 @@
   font-weight: bold;
 }
 .menu__item:nth-child(1) {
-  -webkit-animation: 2s ease-in-out fade-in;
-          animation: 2s ease-in-out fade-in;
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-    top: 50px;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
+  animation: 2s ease-in-out fade-in;
 }
 @keyframes fade-in {
   0% {
@@ -556,22 +499,7 @@
   }
 }
 .menu__item:nth-child(2) {
-  -webkit-animation: 2s ease-in-out fade-in2;
-          animation: 2s ease-in-out fade-in2;
-}
-@-webkit-keyframes fade-in2 {
-  0% {
-    opacity: 0;
-    top: 50px;
-  }
-  20% {
-    opacity: 0;
-    top: 50px;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
+  animation: 2s ease-in-out fade-in2;
 }
 @keyframes fade-in2 {
   0% {
@@ -588,22 +516,7 @@
   }
 }
 .menu__item:nth-child(3) {
-  -webkit-animation: 2s ease-in-out fade-in3;
-          animation: 2s ease-in-out fade-in3;
-}
-@-webkit-keyframes fade-in3 {
-  0% {
-    opacity: 0;
-    top: 50px;
-  }
-  40% {
-    opacity: 0;
-    top: 50px;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
+  animation: 2s ease-in-out fade-in3;
 }
 @keyframes fade-in3 {
   0% {
@@ -620,7 +533,7 @@
   }
 }
 .menu__item::after {
-  content: "\f058";
+  content: "";
   font-family: "font awesome 5 free";
   font-size: 30px;
   display: flex;
@@ -673,4 +586,6 @@ body {
   position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

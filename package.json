@@ -1,0 +1,19 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Création du site Ohmyfood! Paris",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./sass/vendors/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nivorako/rakotondrabe_3_05112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nivorako/rakotondrabe_3_05112021/issues"
+  },
+  "homepage": "https://github.com/nivorako/rakotondrabe_3_05112021#readme"
+}
