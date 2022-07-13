@@ -57,96 +57,6 @@
   -webkit-text-stroke: 1px rgb(252, 42, 224);
 }
 
-.head {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 30px auto;
-}
-.head img {
-  width: 220px;
-}
-.head__title {
-  font-family: "shrikhand", cursive;
-  font-size: 40px;
-  opacity: 50%;
-}
-.head__arrow {
-  color: black;
-  position: absolute;
-  top: 10px;
-  left: 25px;
-}
-
-.foot {
-  position: relative;
-  background-color: #383838;
-  padding: 30px 20px 30px;
-}
-@media screen and (min-width: 768px) {
-  .foot {
-    width: 100%;
-  }
-}
-.foot__title {
-  color: white;
-  text-align: center;
-  font-family: "shrikhand", cursive;
-  font-size: 28px;
-}
-@media screen and (max-width: 768px) {
-  .foot__title {
-    text-align: left;
-  }
-}
-.foot__items {
-  margin-top: 50px;
-}
-@media screen and (min-width: 768px) {
-  .foot__items {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
-  }
-}
-.foot ul {
-  padding-left: 0;
-}
-.foot li {
-  list-style: none;
-}
-.foot a {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  gap: 20px;
-  text-decoration: none;
-  color: white;
-}
-.foot a:hover {
-  color: #6b6b6b;
-}
-.foot p {
-  font-weight: bold;
-  margin: 10px 0 10px;
-  text-align: left;
-}
-
-#foot__logo {
-  filter: brightness(0) invert(1);
-  width: 150px;
-}
-@media screen and (min-width: 768px) {
-  #foot__logo {
-    position: absolute;
-    left: 45%;
-  }
-}
-
 .locate {
   width: 100%;
   display: flex;
@@ -452,6 +362,96 @@
     z-index: -1;
   }
 }
+.head {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+.head img {
+  width: 220px;
+}
+.head__title {
+  font-family: "shrikhand", cursive;
+  font-size: 40px;
+  opacity: 50%;
+}
+.head__arrow {
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.foot {
+  position: relative;
+  background-color: #383838;
+  padding: 30px 20px 30px;
+}
+@media screen and (min-width: 768px) {
+  .foot {
+    width: 100%;
+  }
+}
+.foot__title {
+  color: white;
+  text-align: center;
+  font-family: "shrikhand", cursive;
+  font-size: 28px;
+}
+@media screen and (max-width: 768px) {
+  .foot__title {
+    text-align: left;
+  }
+}
+.foot__items {
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .foot__items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+.foot ul {
+  padding-left: 0;
+}
+.foot li {
+  list-style: none;
+}
+.foot a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 20px;
+  text-decoration: none;
+  color: white;
+}
+.foot a:hover {
+  color: #6b6b6b;
+}
+.foot p {
+  font-weight: bold;
+  margin: 10px 0 10px;
+  text-align: left;
+}
+
+#foot__logo {
+  filter: brightness(0) invert(1);
+  width: 150px;
+}
+@media screen and (min-width: 768px) {
+  #foot__logo {
+    position: absolute;
+    left: 45%;
+  }
+}
+
 .menu {
   width: 100%;
   margin: auto;
