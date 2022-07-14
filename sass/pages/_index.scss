@@ -92,22 +92,17 @@
                 background-color: turquoise; 
                 width: 100px;
                 height: 100px;
+                i{
+                    width: 25px;
+                    height: 25px;
+                    margin: 0 auto;
+                    background-color: white;
+                    border-radius: 50%;
+                    color: turquoise;
+                    text-align: center;
+                    line-height: 1.5em;
+                }
             }
-        }
-    }
-
-    &__ic{
-        background-color: aqua;
-        
-        i{
-            width: 25px;
-            height: 25px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 50%;
-            color: turquoise;
-            text-align: center;
-            line-height: 1.5em;
         }
     }
 

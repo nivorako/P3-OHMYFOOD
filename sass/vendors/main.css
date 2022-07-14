@@ -494,10 +494,7 @@
   width: 100px;
   height: 100px;
 }
-.menu__ic {
-  background-color: aqua;
-}
-.menu__ic i {
+.menu__item div div i {
   width: 25px;
   height: 25px;
   margin: 0 auto;
