@@ -115,14 +115,12 @@
   }
 }
 .working__items {
-  padding-left: 0;
   display: flex;
   flex-direction: column;
   padding: 0;
 }
 @media screen and (min-width: 1440px) {
   .working__items {
-    margin-left: 0;
     flex-direction: row;
     justify-content: space-between;
   }
