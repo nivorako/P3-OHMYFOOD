@@ -4,7 +4,7 @@
   "description": "Création du site Ohmyfood! Paris",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./sass/vendors/main.css"
+    "sass": "sass --watch ./sass/main.scss:./style/main.css"
   },
   "repository": {
     "type": "git",
